@@ -539,6 +539,17 @@ h3 {
   text-transform: uppercase;
 }
 
+.proects-inner .img-proects{
+  height: 243px;
+  overflow: hidden;
+}
+
+.proects-inner .img-proects img{
+  min-width: 100%;
+  width: auto;
+  height: 100%;
+}
+
 .proect-gallery{
   margin-top: 100px;
   margin-bottom: 100px;
@@ -693,4 +704,40 @@ h3 {
   color: #ffffff;
   margin: 30px;
   line-height: 1.7;
+}
+
+
+/*************************Дизайн********************************/
+
+.designe-inner .container{
+padding-bottom: 100px;
+}
+
+.designe-inner {
+background: url(../img/3.jpg) no-repeat #3e6d44;
+background-size: cover;
+background-attachment: fixed;
+background-position: top;
+}
+
+.designe-inner h1{
+color: #ffffff;
+text-transform: uppercase;
+font-size: 40px;
+font-weight: 100;
+margin-bottom: 50px;
+margin-top: 50px;
+text-align: center;
+}
+
+.designe-inner img{
+max-width: 100%;
+height: auto;
+}
+
+.designe-inner p{
+font-size: 23px;
+color: #ffffff;
+margin: 30px;
+line-height: 1.7;
 }

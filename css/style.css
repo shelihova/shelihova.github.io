@@ -162,7 +162,7 @@ body{
   position: fixed;
   width: 285px;
   top: 0;
-  z-index: 1000;
+  z-index: 100000;
 }
 
 
@@ -925,6 +925,69 @@ line-height: 1.7;
     text-align: center;
   }
 
+  /***************************проекти****************************/
+
+  .proect-gallery .cols.col-7,
+  .proect-gallery .cols.col-5{
+    width: 100%;
+  }
+
+  .proect-gallery{
+    margin-top: 50px;
+  }
+
+  .proect-descr{
+    margin-left: 0;
+    margin: 0 10px;
+  }
+
+  .proect-descr .cols.col-7{
+    width: 70%;
+  }
+
+  .proect-descr .cols.col-5{
+    width: 30%;
+  }
+
+  .btn-proect {
+    margin-top: 30px;
+}
+
+.btn-proect a{
+  width: 80%;
+}
+
+.proect-form .grey{
+  line-height: normal;
+}
+
+.proect-form .green{
+  font-size: 16px;
+}
+
+.proect-form form input{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+
+/**********************дизайн***************************/
+
+.designe-inner .cols.col-6{
+  width: 100%;
+}
+
+.designe-desc{
+  display: none;
+}
+
+.designe-inner p{
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+}
+
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 639px) {
@@ -1032,6 +1095,67 @@ line-height: 1.7;
   text-align: center;
 }
 
+/***************************проекти****************************/
+
+.proect-gallery .cols.col-7,
+.proect-gallery .cols.col-5{
+  width: 100%;
+}
+
+.proect-gallery{
+  margin-top: 50px;
+}
+
+.proect-descr{
+  margin-left: 0;
+  margin: 0 10px;
+}
+
+.proect-descr .cols.col-7{
+  width: 70%;
+}
+
+.proect-descr .cols.col-5{
+  width: 30%;
+}
+
+.btn-proect {
+  margin-top: 30px;
+}
+
+.btn-proect a{
+width: 80%;
+}
+
+.proect-form .grey{
+line-height: normal;
+}
+
+.proect-form .green{
+font-size: 16px;
+}
+
+.proect-form form input{
+width: 100%;
+margin-bottom: 5px;
+}
+
+/**********************дизайн***************************/
+
+.designe-inner .cols.col-6{
+  width: 100%;
+}
+
+.designe-desc{
+  display: none;
+}
+
+.designe-inner p{
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+}
+
 
 }
 
@@ -1093,6 +1217,23 @@ line-height: 1.7;
     text-align: center;
   }
 
+  /***********************проекти****************************/
+
+.proect-form form input[type="submit"]{
+  font-size: 14px;
+}
+
+/**********************дизайн***************************/
+
+.designe-mob{
+  display: none;
+}
+
+.designe-inner p{
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+}
 
 }
 
@@ -1118,6 +1259,10 @@ line-height: 1.7;
     display: none;
   }
 
+  .designe-mob{
+    display: none;
+  }
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px){
@@ -1130,6 +1275,10 @@ line-height: 1.7;
     display: none;
   }
 
+  .designe-mob{
+    display: none;
+  }
+
 }
 
 /* Большой дисплей*/
@@ -1139,6 +1288,10 @@ line-height: 1.7;
   }
 
   .tech-mob{
+    display: none;
+  }
+
+  .designe-mob{
     display: none;
   }
 }

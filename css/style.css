@@ -907,6 +907,24 @@ line-height: 1.7;
     margin: 0 auto;
     margin-top: 10px;
   }
+
+    /******************технології*********************/
+
+  .technology-inner .cols.col-6{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .tech-desc{
+    display: none;
+  }
+
+  .technology-inner p{
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 639px) {
@@ -997,6 +1015,23 @@ line-height: 1.7;
     margin: 0 auto;
   }
 
+  /******************технології*********************/
+
+.technology-inner .cols.col-6{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tech-desc{
+  display: none;
+}
+
+.technology-inner p{
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+}
+
 
 }
 
@@ -1045,6 +1080,20 @@ line-height: 1.7;
       display: block;
       margin: 0 auto;
     }
+
+    .tech-mob{
+      display: none;
+    }
+
+    /******************технології*********************/
+
+  .technology-inner p{
+    font-size: 22px;
+    line-height: normal;
+    text-align: center;
+  }
+
+
 }
 
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -1065,6 +1114,10 @@ line-height: 1.7;
     width: 50%;
   }
 
+  .tech-mob{
+    display: none;
+  }
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px){
@@ -1072,11 +1125,20 @@ line-height: 1.7;
   .icon-menu{
     display: none;
   }
+
+  .tech-mob{
+    display: none;
+  }
+
 }
 
 /* Большой дисплей*/
 @media (min-width: 1268px) {
   .icon-menu{
+    display: none;
+  }
+
+  .tech-mob{
     display: none;
   }
 }

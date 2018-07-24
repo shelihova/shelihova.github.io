@@ -45,6 +45,11 @@ window.onload=listStart;
 
 <script src="js/fb.js"></script>
 
+<!--text-->
+
+<script src="js/typeit.js"></script>
+
+
 </head>
 
 <body>
@@ -301,7 +306,7 @@ window.onload=listStart;
 <div class="text-main">
   <div class="container">
     <div class="cols col-12">
-      <p>Для меня важно, чтобы пациент был поинформирован.</p>
+      <p id="example4"></p>
     </div>
   </div>
 </div>
@@ -338,6 +343,15 @@ window.onload=listStart;
     </div>
   </div>
 </div>
+
+    <script>
+      new TypeIt('#example4', {
+      speed: 100,
+      strings: ['Для меня важно, чтобы пациент был поинформирован.', 'Для меня важно, чтобы пациент был поинформирован.'],
+      loop: true,
+      breakLines: false
+      });
+		</script>
 
 </body>
 </html>

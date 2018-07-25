@@ -69,13 +69,13 @@ body{
 .phone li{
   list-style: none;
   font-size: 23px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .addres li{
   list-style: none;
   font-size: 23px;
-  padding-bottom: 12px;
+  padding-bottom: 22px;
   text-align: right;
 }
 
@@ -296,6 +296,7 @@ cursor: pointer;
 
 .patient{
   margin-top: 50px;
+	margin-bottom: 70px;
 }
 
 .services{

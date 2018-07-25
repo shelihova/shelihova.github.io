@@ -100,6 +100,35 @@ body{
   background-color: #CDCDCD;
   height: 60px;
   margin-bottom: 30px;
+
+}
+
+.f-menu{
+	z-index: 9999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.menu .logo-fixed{
+	line-height: 60px;
+	display: none;
+}
+
+.menu .logo-fixed img{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.logo-hidden{
+ display: block !important;
+}
+
+.lang-hidden{
+	display: none !important;
 }
 
 #m_body {

@@ -43,6 +43,44 @@ function menuOpen(id){
 window.onload=listStart;
 </script>
 
+
+<!--menu fixed-->
+<script type="text/javascript">
+
+  jQuery("document").ready(function($){
+
+  	var nav = $('.menu');
+
+  	$(window).scroll(function () {
+  		if ($(this).scrollTop() > 120) {
+  			nav.addClass("f-menu");
+  		} else {
+  			nav.removeClass("f-menu");
+  		}
+  	});
+
+   var logo = $('.logo-fixed');
+    $(window).scroll(function () {
+  		if ($(this).scrollTop() > 120) {
+  			logo.addClass("logo-hidden");
+  		} else {
+  			logo.removeClass("logo-hidden");
+  		}
+  	});
+
+    var lang = $('.lang-menu');
+     $(window).scroll(function () {
+   		if ($(this).scrollTop() > 120) {
+   			lang.addClass("lang-hidden");
+   		} else {
+   			lang.removeClass("lang-hidden");
+   		}
+   	});
+
+  });
+
+</script>
+
 <script src="js/fb.js"></script>
 
 <!--text-->
@@ -83,7 +121,7 @@ window.onload=listStart;
 <div class="menu">
   <div class="container">
 
-    <div class="cols col-2">
+    <div class="cols col-2 lang-menu">
       <div id="m_body">
 				<ul>
 					<li><a href="#" onclick="menuOpen('s_mn_1');return(false)">RU</a>
@@ -93,7 +131,11 @@ window.onload=listStart;
 					</li>
 				</ul>
 			</div>
-    </div>
+   </div>
+
+   <div class="cols col-2 logo-fixed">
+      <a href="#"><img src="img/logo_fixed.png"/></a>
+   </div>
 
     <div class="cols col-8 main-menu">
       <ul>

@@ -92,15 +92,17 @@ body{
   margin-bottom: 10px;
 }
 
+.header-mobile{
+	display: none;
+}
 
 /*********************menu************************/
 
 .menu{
   width: 100%;
   background-color: #CDCDCD;
-  height: 60px;
+  height: 80px;
   margin-bottom: 30px;
-
 }
 
 .f-menu{
@@ -111,8 +113,12 @@ body{
 	width: 100%;
 }
 
+.main-menu{
+	overflow: hidden;
+}
+
 .menu .logo-fixed{
-	line-height: 60px;
+	line-height: 80px;
 	display: none;
 }
 
@@ -135,7 +141,7 @@ body{
   background-color: #bfbdbe;
   width: 50px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #m_body li{
@@ -162,11 +168,15 @@ body{
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: #fe0000;
   font-size: 15px;
   width: 100%;
   float: right;
+}
+
+.button-mobile{
+	display: none;
 }
 
 .main-menu{
@@ -180,6 +190,11 @@ body{
   left:50%;
   position:relative;
   float:left;
+	font-size: 16px;
+}
+
+.main-menu ul.font-fixed{
+	font-size: 15px;
 }
 
 .main-menu ul li{
@@ -194,11 +209,19 @@ body{
   color: #999999;
   text-transform: uppercase;
   padding: 5px;
-  line-height: 60px;
+  line-height: 80px;
 }
 
 .main-menu ul .active a{
   color: #ffffff;
+}
+
+.phone-mobile{
+	display: none;
+}
+
+.mobile-menu{
+	display: none;
 }
 
 
@@ -229,6 +252,10 @@ body{
 
 .banner span{
   color: #fe0000;
+}
+
+.banner-m{
+	display: none;
 }
 
 /********************stat************************/
@@ -580,6 +607,196 @@ h3.city-name {
 
 
 @media screen and (min-width: 300px) and (max-width: 479px) {
+
+	.header{
+		display: none;
+	}
+
+	.header-mobile{
+		display: block;
+	}
+
+	.header-mobile img{
+		height: 90px;
+		width: 90px;
+		margin: 10px auto;
+		display: block;
+	}
+
+	.menu{
+		height: 60px;
+	}
+
+	.phone-mobile{
+		display: block;
+	}
+
+	.phone-mobile ul{
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.phone-mobile li{
+		list-style: none;
+		font-size: 15px;
+		line-height: normal;
+	}
+
+	.menu .button{
+		display: none;
+	}
+
+	#m_body{
+		margin-top: 7px;
+		background:#CDCDCD;
+		position: absolute;
+		width: auto;
+	}
+
+	.border-ru{
+		border: 2px solid #666666;
+	}
+
+	.main-menu{
+		display: none;
+	}
+
+	.menu{
+		margin-bottom: 0;
+	}
+
+	/**********************mobile menu***************************/
+
+	.mobile-menu{
+		display: block;
+	}
+
+	.menu-m {
+	  background: #666666;
+	  left: -285px;
+	  height: 100%;
+	  position: fixed;
+	  width: 285px;
+	  top: 0;
+	  z-index: 100000;
+	}
+
+
+	/* Basic CSS */
+
+	.menu-m ul {
+
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	  float: none;
+	}
+
+	.menu-m ul li {
+
+	  line-height: 45px;
+	  padding-bottom: 3px;
+	  padding-left: 20px;
+	  padding-top: 3px;
+	  float: none;
+
+	}
+
+	.menu-m li:hover {
+	  cursor: pointer;
+
+	  }
+
+	.menu-m ul li a {
+	  color: #fff;
+	  font-size: 16px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-align: left;
+	  margin-right: 20px;
+	  border-left: 1px solid #CDCDCD;
+	  border-right: none;
+		padding-left: 20px;
+	}
+
+	.icon-close {
+	  cursor: pointer;
+	  padding-left: 10px;
+	  padding-top: 10px;
+	  padding-bottom: 6px;
+	}
+
+	.icon-menu {
+	  color: #fff;
+	  cursor: pointer;
+	  font-size: 20px;
+	  margin-top: 10px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+		width: auto;
+	}
+
+	.icon-menu img{
+		width: 100%;
+	}
+
+
+	.button-mobile .col-12{
+	  text-align: center;
+	}
+
+	.button-mobile .col-12 a{
+	  display: block;
+	  color: #ffffff;
+	  text-decoration: none;
+	  font-weight: bold;
+	  padding: 10px;
+	  margin-top: 10px;
+	  background-color: #fe0000;
+	  font-size: 15px;
+	  width: 100%;
+	  float: right;
+	}
+
+	.button-mobile{
+		display: block;
+	width: 100%;
+	background-color: #CDCDCD;
+	height: 60px;
+	}
+
+	.banner{
+		display: none;
+	}
+
+	.banner-m{
+		display: block;
+	}
+
+	.banner-m .container {
+		width: 100%;
+	  position: relative;
+
+	}
+		.banner-m img{
+			width: 100%;
+	}
+
+	.banner-m p{
+	  position: absolute;
+	  z-index: 1;
+	  left: 5%;
+	  top: 35%;
+	  display: block;
+	  text-transform: uppercase;
+	  font-size: 20px;
+	  line-height: normal;
+	  font-weight: bold;
+	}
+
+	.banner-m span{
+	  color: #fe0000;
+	}
 
 }
 

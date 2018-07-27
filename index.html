@@ -22,27 +22,26 @@
 <!--lag-menu-->
 
 <script type="text/javascript">
-var m_id = new Array('s_mn_1');
-listStart = function allclose() {
-  for (i=0; i < m_id.length; i++){
-  document.getElementById(m_id[i]).style.display = "none";
-  }
-}
-function menuOpen(id){
-  for (i=0; i < m_id.length; i++){
-  if (id != m_id[i]){
-  document.getElementById(m_id[i]).style.display = "none";
-  }
-  }
-  if (document.getElementById(id).style.display == "block"){
-  document.getElementById(id).style.display = "none";
-  }else{
-  document.getElementById(id).style.display = "block";
-  }
-}
-window.onload=listStart;
+    var m_id = new Array('s_mn_1');
+    listStart = function allclose() {
+      for (i=0; i < m_id.length; i++){
+      document.getElementById(m_id[i]).style.display = "none";
+      }
+    }
+    function menuOpen(id){
+      for (i=0; i < m_id.length; i++){
+      if (id != m_id[i]){
+      document.getElementById(m_id[i]).style.display = "none";
+      }
+      }
+      if (document.getElementById(id).style.display == "block"){
+      document.getElementById(id).style.display = "none";
+      }else{
+      document.getElementById(id).style.display = "block";
+      }
+    }
+    window.onload=listStart;
 </script>
-
 
 <!--menu fixed-->
 <script type="text/javascript">
@@ -77,6 +76,15 @@ window.onload=listStart;
    		}
    	});
 
+    var font = $('.menu-font');
+     $(window).scroll(function () {
+   		if ($(this).scrollTop() > 120) {
+   			font.addClass("font-fixed");
+   		} else {
+   			font.removeClass("font-fixed");
+   		}
+   	});
+
   });
 
 </script>
@@ -87,13 +95,10 @@ window.onload=listStart;
 
 <script src="js/typeit.js"></script>
 
-
 </head>
 
 <body>
-
 <div class="header">
-
   <div class="container">
     <div class="row">
 		  <div class="cols col-4 phone">
@@ -121,10 +126,42 @@ window.onload=listStart;
 <div class="menu">
   <div class="container">
 
+    <div class="cols col-2 mobile-menu">
+      <div class="menu-m menu-mob">
+                <!-- Иконка меню -->
+                <div class="icon-close">
+                  <img src="img/close-btn.png">
+                </div>
+
+                <!-- Меню -->
+                <ul>
+                  <li class="active"><a href="#">Главная</a></li>
+                  <li><a href="#">Знакомство</a></li>
+                  <li><a href="#">Консультация</a></li>
+                  <li><a href="#">Лечение</a></li>
+                  <li><a href="#">Медиа</a></li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+
+
+                <div class="icon-menu">
+                  <img src="img/menu-ham-icon.png">
+                </div>
+    </div>
+
+    <div class="cols col-8 phone-mobile">
+      <ul>
+        <li>(093) 103 1 103</li>
+        <li>(097) 103 1 103</li>
+      </ul>
+    </div>
+
     <div class="cols col-2 lang-menu">
       <div id="m_body">
 				<ul>
-					<li><a href="#" onclick="menuOpen('s_mn_1');return(false)">RU</a>
+					<li class="border-ru"><a href="#" onclick="menuOpen('s_mn_1');return(false)">RU</a>
 						<ul id="s_mn_1">
 							 <li><a href="#">UA</a></li>
 						</ul>
@@ -138,7 +175,7 @@ window.onload=listStart;
    </div>
 
     <div class="cols col-8 main-menu">
-      <ul>
+      <ul class="menu-font">
         <li class="active"><a href="#">Главная</a></li>
         <li><a href="#">Знакомство</a></li>
         <li><a href="#">Консультация</a></li>
@@ -156,10 +193,35 @@ window.onload=listStart;
   </div>
 </div>
 
+<div class="header-mobile">
+  <div class="container">
+      <div class="cols col-12">
+        <a href="#"><img src="img/logo1.png" alt=""></a>
+      </div>
+    </div>
+</div><!-- header-mobile -->
+
+<div class="button-mobile">
+  <div class="container">
+    <div class="cols col-12">
+      <a href="#">ЗАПИСЬ НА ПРИЙОМ</a>
+    </div>
+  </div>
+</div>
+
 <div class="banner">
   <div class="container">
     <div class="cols col-12">
-      <img src="img/anton banner.jpg">
+      <img src="img/bannernew.jpg">
+      <p>Сучаcний погляд на <br><span>нейрохірургію та онкологію</span></p>
+    </div>
+  </div>
+</div>
+
+<div class="banner-m">
+  <div class="container">
+    <div class="cols col-12">
+      <img src="img/bannernew_m.jpg">
       <p>Сучаcний погляд на <br><span>нейрохірургію та онкологію</span></p>
     </div>
   </div>
@@ -394,6 +456,8 @@ window.onload=listStart;
       breakLines: false
       });
 		</script>
+
+  <script src="js/menu.js"></script>
 
 </body>
 </html>

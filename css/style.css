@@ -661,12 +661,20 @@ h3.city-name {
 		display: none;
 	}
 
+	.lang-menu{
+		position: relative;
+	}
+
 	#m_body{
-		margin-top: 7px;
+		margin-top: 8px;
 		background:#CDCDCD;
 		position: absolute;
-		width: auto;
+		width: 43px;
+		right: 0;
+	}
 
+	#m_body li a{
+		padding: 10px 7px;
 	}
 
 	.logo-fixed-m{
@@ -679,7 +687,9 @@ h3.city-name {
 		margin: 0;
 		margin-top: 8px;
 		border: 2px solid #666666;
-		padding: 4px 2px;
+		padding: 6px 2px;
+		display: block;
+		float: right;
 	}
 
 	.logo-hidden-m{

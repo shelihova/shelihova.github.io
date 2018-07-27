@@ -887,11 +887,12 @@ h3.city-name {
 
 	.social{
 		margin-bottom: 50px;
+		background-color: #cdcdcd;
 	}
 
 	.social .container{
-		width: 100%;
-		padding: 10px;
+		width: 90%;
+		padding: 0;
 	}
 
 	.social .container .cols.col-6{

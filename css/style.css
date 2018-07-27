@@ -228,6 +228,13 @@ a[href^="tel"]{
 	display: none;
 }
 
+.logo-fixed-m{
+	display: none;
+}
+
+.logo-hidden-m{
+	display: none;
+}
 
 /**********************BANNER*******************************/
 

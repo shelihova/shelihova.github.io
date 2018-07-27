@@ -53,19 +53,11 @@
   	$(window).scroll(function () {
   		if ($(this).scrollTop() > 120 && window.innerWidth >= 600 ) {
   			nav.addClass("f-menu");
-  		} else {
+  		} else if ($(this).scrollTop() > 1 && window.innerWidth < 600 ) {
+          nav.addClass("f-menu");
+        } else {
   			nav.removeClass("f-menu");
   		}
-  	});
-
-    var nav = $('.menu');
-
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 1 && window.innerWidth < 600 ) {
-        nav.addClass("f-menu");
-      } else {
-        nav.removeClass("f-menu");
-      }
     });
 
    var logo = $('.logo-fixed');
@@ -77,12 +69,12 @@
   		}
   	});
 
-    var logo = $('.logo-fixed-m');
+    var logom = $('.logo-fixed-m');
      $(window).scroll(function () {
    		if ($(this).scrollTop() > 1 && window.innerWidth < 600) {
-   			logo.addClass("logo-hidden-m");
+   			logom.addClass("logo-hidden-m");
    		} else {
-   			logo.removeClass("logo-hidden-m");
+   			logom.removeClass("logo-hidden-m");
    		}
    	});
 
@@ -90,19 +82,12 @@
      $(window).scroll(function () {
    		if ($(this).scrollTop() > 120 && window.innerWidth >= 600) {
    			lang.addClass("lang-hidden");
-   		} else {
+   		} else if ($(this).scrollTop() > 1 && window.innerWidth < 600) {
+          lang.addClass("lang-hidden");
+        } else {
    			lang.removeClass("lang-hidden");
    		}
    	});
-
-    var lang = $('.lang-menu');
-     $(window).scroll(function () {
-      if ($(this).scrollTop() > 1 && window.innerWidth < 600) {
-        lang.addClass("lang-hidden");
-      } else {
-        lang.removeClass("lang-hidden");
-      }
-    });
 
     var font = $('.menu-font');
      $(window).scroll(function () {
@@ -115,7 +100,7 @@
 
     var headerm = $('.header-mobile');
      $(window).scroll(function () {
-   		if ($(this).scrollTop() > 1) {
+   		if ($(this).scrollTop() > 1 && window.innerWidth < 600) {
    			headerm.addClass("header-mobile-hidden");
    		} else {
    			headerm.removeClass("header-mobile-hidden");
@@ -160,7 +145,7 @@
 
 </div><!-- header -->
 
-<div class="menu">
+<div class="menu menu-fixed-m">
 
   <div class="menu-container">
   <div class="container">

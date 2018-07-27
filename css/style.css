@@ -824,6 +824,10 @@ h3.city-name {
 		width: 100%;
 	}
 
+	.custom{
+		left: 0;
+	}
+
 	.services{
 		margin-right: 0;
 		margin-top: 0;

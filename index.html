@@ -51,30 +51,58 @@
   	var nav = $('.menu');
 
   	$(window).scroll(function () {
-  		if ($(this).scrollTop() > 120) {
+  		if ($(this).scrollTop() > 120 && window.innerWidth >= 600 ) {
   			nav.addClass("f-menu");
   		} else {
   			nav.removeClass("f-menu");
   		}
   	});
 
+    var nav = $('.menu');
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 1 && window.innerWidth < 600 ) {
+        nav.addClass("f-menu");
+      } else {
+        nav.removeClass("f-menu");
+      }
+    });
+
    var logo = $('.logo-fixed');
     $(window).scroll(function () {
-  		if ($(this).scrollTop() > 120) {
+  		if ($(this).scrollTop() > 120 && window.innerWidth >= 600) {
   			logo.addClass("logo-hidden");
   		} else {
   			logo.removeClass("logo-hidden");
   		}
   	});
 
+    var logo = $('.logo-fixed-m');
+     $(window).scroll(function () {
+   		if ($(this).scrollTop() > 1 && window.innerWidth < 600) {
+   			logo.addClass("logo-hidden-m");
+   		} else {
+   			logo.removeClass("logo-hidden-m");
+   		}
+   	});
+
     var lang = $('.lang-menu');
      $(window).scroll(function () {
-   		if ($(this).scrollTop() > 120) {
+   		if ($(this).scrollTop() > 120 && window.innerWidth >= 600) {
    			lang.addClass("lang-hidden");
    		} else {
    			lang.removeClass("lang-hidden");
    		}
    	});
+
+    var lang = $('.lang-menu');
+     $(window).scroll(function () {
+      if ($(this).scrollTop() > 1 && window.innerWidth < 600) {
+        lang.addClass("lang-hidden");
+      } else {
+        lang.removeClass("lang-hidden");
+      }
+    });
 
     var font = $('.menu-font');
      $(window).scroll(function () {
@@ -82,6 +110,15 @@
    			font.addClass("font-fixed");
    		} else {
    			font.removeClass("font-fixed");
+   		}
+   	});
+
+    var headerm = $('.header-mobile');
+     $(window).scroll(function () {
+   		if ($(this).scrollTop() > 1) {
+   			headerm.addClass("header-mobile-hidden");
+   		} else {
+   			headerm.removeClass("header-mobile-hidden");
    		}
    	});
 
@@ -124,6 +161,8 @@
 </div><!-- header -->
 
 <div class="menu">
+
+  <div class="menu-container">
   <div class="container">
 
     <div class="cols col-2 mobile-menu">
@@ -174,6 +213,10 @@
       <a href="#"><img src="img/logo_fixed.png"/></a>
    </div>
 
+   <div class="cols col-2 logo-fixed-m">
+      <a href="#"><img src="img/brain-m.png"/></a>
+    </div>
+
     <div class="cols col-8 main-menu">
       <ul class="menu-font">
         <li class="active"><a href="#">Главная</a></li>
@@ -191,23 +234,25 @@
     </div>
 
   </div>
-</div>
+  </div>
 
-<div class="header-mobile">
-  <div class="container">
+  <div class="header-mobile">
+    <div class="container">
+        <div class="cols col-12">
+          <a href="#"><img src="img/logo1.png" alt=""></a>
+        </div>
+      </div>
+  </div><!-- header-mobile -->
+
+  <div class="button-mobile">
+    <div class="container">
       <div class="cols col-12">
-        <a href="#"><img src="img/logo1.png" alt=""></a>
+        <a href="#">ЗАПИСЬ НА ПРИЙОМ</a>
       </div>
     </div>
-</div><!-- header-mobile -->
-
-<div class="button-mobile">
-  <div class="container">
-    <div class="cols col-12">
-      <a href="#">ЗАПИСЬ НА ПРИЙОМ</a>
-    </div>
   </div>
-</div>
+
+</div><!--end menu-->
 
 <div class="banner">
   <div class="container">

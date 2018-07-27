@@ -733,7 +733,7 @@ h3.city-name {
 	  margin-top: 10px;
 	  text-decoration: none;
 	  text-transform: uppercase;
-		width: auto;
+		width: 100%;
 	}
 
 	.icon-menu img{
@@ -786,16 +786,25 @@ h3.city-name {
 	  position: absolute;
 	  z-index: 1;
 	  left: 5%;
-	  top: 35%;
+	  top: 55%;
 	  display: block;
 	  text-transform: uppercase;
-	  font-size: 20px;
+	  font-size: 16px;
 	  line-height: normal;
 	  font-weight: bold;
 	}
 
 	.banner-m span{
 	  color: #fe0000;
+	}
+
+	.stat .container .cols.col-3{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.stat h2{
+		font-size: 28px;
 	}
 
 }

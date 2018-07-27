@@ -479,12 +479,13 @@ h3.city-name {
   margin-right: 20px;
 }
 
-.send-data p{
+.send-data a{
   text-transform: uppercase;
   line-height: 100px;
   color: #ffffff;
   font-size: 35px;
   font-weight: 600;
+	text-decoration: none;
 }
 
 .send-description{
@@ -806,6 +807,126 @@ h3.city-name {
 	.stat h2{
 		font-size: 28px;
 	}
+
+	.about-us .container .cols.col-2,
+	.about-us .container .cols.col-8{
+		width: 100%;
+	}
+
+	.about-us .button {
+    float: none;
+		margin-top: 20px;
+		display: block;
+	}
+
+	.patient .container .cols.col-3,
+	.patient .container .cols.col-6{
+		width: 100%;
+	}
+
+	.services{
+		margin-right: 0;
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+
+	.send .container .cols.col-6{
+		width: 100%;
+	}
+
+	.send-data{
+	  height: 60px;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	  margin-right: 0;
+	}
+
+	.send-data img{
+	  padding-left: 10px;
+	  margin-right: 10px;
+	}
+
+	.send-data a{
+	  line-height: 60px;
+	  font-size: 15px;
+		display: block;
+	}
+
+	.send-description{
+	  font-size: 16px;
+	  margin-top: 10px;
+	  margin-left: 0px;
+	  margin-right: 0px;
+		margin-bottom: 20px;
+	}
+
+	.blog .container .cols.col-4{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.blog {
+    margin-top: 50px;
+		height: auto;
+	}
+
+	.text-main{
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+
+	.text-main p{
+		line-height: normal;
+		padding-top: 10px;
+	}
+
+	.social{
+		margin-bottom: 50px;
+	}
+
+	.social .container{
+		width: 100%;
+		padding: 10px;
+	}
+
+	.social .container .cols.col-6{
+		width: 100%;
+	}
+
+	.widget-facebook{
+		margin-bottom: 20px;
+
+	}
+
+	.yt_ifrane{
+		width: 100%;
+		height: auto;
+	}
+
+	.footer .container .cols.col-5,
+	.footer .container .cols.col-2{
+		width: 100%;
+	}
+
+	.footer p{
+		margin-left: 0;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.copyright{
+		text-align: center;
+	}
+
+	.footer .soc-icons a {
+		float: none;
+		margin: 9px;
+	}
+
+	.footer .soc-icons a:first-child{
+	    margin-right: 9px;
+	}
+
 
 }
 

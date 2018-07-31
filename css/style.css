@@ -67,7 +67,12 @@ a[href^="tel"]{
 
 .header .phone,
 .header .addres{
-  padding-top: 70px;
+  padding-top: 45px;
+}
+
+.header .phone ul,
+.header .addres ul{
+
 }
 
 .phone li{
@@ -590,7 +595,7 @@ h3.city-name {
 
 .footer{
     background-color: #cdcdcd;
-    padding-top: 20px;
+
 }
 
 .footer .copyright img{
@@ -598,18 +603,36 @@ h3.city-name {
   margin-bottom: 10px;
 }
 
-.footer p{
-  margin-left: 80px;
-  font-size: 15px;
+.footer .copyright p{
+	line-height: 90px;
+	font-size: 14px;
 }
 
+.footer .col-7 p{
+  font-size: 10px;
+  line-height: 90px;
+}
+
+.footer .container .cols.col-2{
+	width: 15%;
+}
+
+.footer .container .cols.col-3{
+	width: 20%;
+}
+
+.footer .cols.col-7{
+	width: 65%;
+}
 
 .footer .soc-icons a {
     float: right;
     margin: 10px;
-    line-height: 70px;
-    font-size: 35px;
+    line-height: 90px;
+    font-size: 27px;
     color: #666666;
+		margin-top: 0;
+		margin-bottom: 0;
 }
 
 .footer .soc-icons a:first-child{
@@ -847,6 +870,10 @@ h3.city-name {
 	  color: #fe0000;
 	}
 
+	.banner-m-hidden{
+		margin-top: 160px;
+	}
+
 	.stat .container .cols.col-3{
 		width: 100%;
 		margin-bottom: 30px;
@@ -957,8 +984,9 @@ h3.city-name {
 		height: auto;
 	}
 
-	.footer .container .cols.col-5,
-	.footer .container .cols.col-2{
+	.footer .container .cols.col-7,
+	.footer .container .cols.col-2,
+	.footer .container .cols.col-3{
 		width: 100%;
 	}
 
@@ -970,10 +998,24 @@ h3.city-name {
 
 	.copyright{
 		text-align: center;
+		line-height: 20px;
+	}
+
+	.footer .copyright p {
+		line-height: 20px;
+	}
+
+	.footer .col-7 p {
+		line-height: 20px;
+	}
+
+	.footer .copyright img{
+		width: 40%;
+		float: left;
 	}
 
 	.footer .soc-icons div{
-		width: 260px;
+		width: 225px;
 		margin: 0 auto;
 	}
 
@@ -1329,8 +1371,9 @@ h3.city-name {
 		height: auto;
 	}
 
-	.footer .container .cols.col-5,
-	.footer .container .cols.col-2{
+	.footer .container .cols.col-7,
+	.footer .container .cols.col-2,
+	.footer .container .cols.col-3{
 		width: 100%;
 	}
 
@@ -1342,7 +1385,15 @@ h3.city-name {
 
 	.copyright{
 		text-align: center;
-		line-height: 55px;
+		line-height: 20px;
+	}
+
+	.footer .copyright p {
+		line-height: 20px;
+	}
+
+	.footer .col-7 p {
+		line-height: 20px;
 	}
 
 	.footer .copyright img{
@@ -1351,7 +1402,7 @@ h3.city-name {
 	}
 
 	.footer .soc-icons div{
-		width: 260px;
+		width: 225px;
 		margin: 0 auto;
 	}
 
@@ -1706,8 +1757,9 @@ h3.city-name {
 		height: auto;
 	}
 
-	.footer .container .cols.col-5,
-	.footer .container .cols.col-2{
+	.footer .container .cols.col-7,
+	.footer .container .cols.col-2,
+	.footer .container .cols.col-3{
 		width: 100%;
 	}
 
@@ -1719,7 +1771,15 @@ h3.city-name {
 
 	.copyright{
 		text-align: center;
-		line-height: 55px;
+		line-height: 20px;
+	}
+
+	.footer .copyright p {
+		line-height: 20px;
+	}
+
+	.footer .col-7 p {
+		line-height: 20px;
 	}
 
 	.footer .copyright img{
@@ -1728,7 +1788,7 @@ h3.city-name {
 	}
 
 	.footer .soc-icons div{
-		width: 260px;
+		width: 225px;
 		margin: 0 auto;
 	}
 
@@ -1942,8 +2002,9 @@ h3.city-name {
 		height: 300px;
 	}
 
-	.footer .container .cols.col-5,
-	.footer .container .cols.col-2{
+	.footer .container .cols.col-7,
+	.footer .container .cols.col-2,
+	.footer .container .cols.col-3{
 		width: 100%;
 	}
 
@@ -1955,7 +2016,15 @@ h3.city-name {
 
 	.copyright{
 		text-align: center;
-		line-height: 55px;
+		line-height: 20px;
+	}
+
+	.footer .copyright p {
+    line-height: 20px;
+	}
+
+	.footer .col-7 p {
+		line-height: 20px;
 	}
 
 	.footer .copyright img{
@@ -1964,7 +2033,7 @@ h3.city-name {
 	}
 
 	.footer .soc-icons div{
-		width: 260px;
+		width: 225px;
 		margin: 0 auto;
 	}
 

@@ -53,7 +53,7 @@
   	$(window).scroll(function () {
   		if ($(this).scrollTop() > 150 && window.innerWidth >= 800 ) {
   			nav.addClass("f-menu");
-  		} else if ($(this).scrollTop() > 1 && window.innerWidth < 800 ) {
+  		} else if ($(this).scrollTop() > 5 && window.innerWidth < 800 ) {
           nav.addClass("f-menu");
         } else {
   			nav.removeClass("f-menu");
@@ -71,7 +71,7 @@
 
     var logom = $('.logo-fixed-m');
      $(window).scroll(function () {
-   		if ($(this).scrollTop() > 1 && window.innerWidth < 800) {
+   		if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
    			logom.addClass("logo-hidden-m");
    		} else {
    			logom.removeClass("logo-hidden-m");
@@ -82,7 +82,7 @@
      $(window).scroll(function () {
    		if ($(this).scrollTop() > 150 && window.innerWidth >= 800) {
    			lang.addClass("lang-hidden");
-   		} else if ($(this).scrollTop() > 1 && window.innerWidth < 800) {
+   		} else if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
           lang.addClass("lang-hidden");
         } else {
    			lang.removeClass("lang-hidden");
@@ -100,7 +100,7 @@
 
     var headerm = $('.header-mobile');
      $(window).scroll(function () {
-   		if ($(this).scrollTop() > 1 && window.innerWidth < 800) {
+   		if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
    			headerm.addClass("header-mobile-hidden");
    		} else {
    			headerm.removeClass("header-mobile-hidden");
@@ -109,7 +109,7 @@
 
     var bannerm = $('.banner-m');
      $(window).scroll(function () {
-      if ($(this).scrollTop() > 1 && window.innerWidth < 800) {
+      if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
         bannerm.addClass("banner-m-hidden");
       } else {
         bannerm.removeClass("banner-m-hidden");

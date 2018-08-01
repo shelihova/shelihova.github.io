@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anton Shkiryak</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="fonts/ProximaNova/stylesheet.css">
+
+<script src="js/jquery-2.1.3.min.js"></script>
+
+<!--відгуки-->
+
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+<!--lag-menu-->
+
+<script type="text/javascript">
+    var m_id = new Array('s_mn_1');
+    listStart = function allclose() {
+      for (i=0; i < m_id.length; i++){
+      document.getElementById(m_id[i]).style.display = "none";
+      }
+    }
+    function menuOpen(id){
+      for (i=0; i < m_id.length; i++){
+      if (id != m_id[i]){
+      document.getElementById(m_id[i]).style.display = "none";
+      }
+      }
+      if (document.getElementById(id).style.display == "block"){
+      document.getElementById(id).style.display = "none";
+      }else{
+      document.getElementById(id).style.display = "block";
+      }
+    }
+    window.onload=listStart;
+</script>
+
+<!--menu fixed-->
+<script type="text/javascript">
+
+  jQuery("document").ready(function($){
+
+  	var nav = $('.menu');
+
+  	$(window).scroll(function () {
+  		if ($(this).scrollTop() > 150 && window.innerWidth >= 800 ) {
+  			nav.addClass("f-menu");
+  		} else if ($(this).scrollTop() > 5 && window.innerWidth < 800 ) {
+          nav.addClass("f-menu");
+        } else {
+  			nav.removeClass("f-menu");
+  		}
+    });
+
+   var logo = $('.logo-fixed');
+    $(window).scroll(function () {
+  		if ($(this).scrollTop() > 150 && window.innerWidth >= 800) {
+  			logo.addClass("logo-hidden");
+  		} else {
+  			logo.removeClass("logo-hidden");
+  		}
+  	});
+
+    var logom = $('.logo-fixed-m');
+     $(window).scroll(function () {
+   		if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
+   			logom.addClass("logo-hidden-m");
+   		} else {
+   			logom.removeClass("logo-hidden-m");
+   		}
+   	});
+
+    var lang = $('.lang-menu');
+     $(window).scroll(function () {
+   		if ($(this).scrollTop() > 150 && window.innerWidth >= 800) {
+   			lang.addClass("lang-hidden");
+   		} else if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
+          lang.addClass("lang-hidden");
+        } else {
+   			lang.removeClass("lang-hidden");
+   		}
+   	});
+
+    var font = $('.menu-font');
+     $(window).scroll(function () {
+   		if ($(this).scrollTop() > 150) {
+   			font.addClass("font-fixed");
+   		} else {
+   			font.removeClass("font-fixed");
+   		}
+   	});
+
+    var headerm = $('.header-mobile');
+     $(window).scroll(function () {
+   		if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
+   			headerm.addClass("header-mobile-hidden");
+   		} else {
+   			headerm.removeClass("header-mobile-hidden");
+   		}
+   	});
+
+    var bannerm = $('.banner-m');
+     $(window).scroll(function () {
+      if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
+        bannerm.addClass("banner-m-hidden");
+      } else {
+        bannerm.removeClass("banner-m-hidden");
+      }
+    });
+
+    var introductionh = $('.introduction');
+     $(window).scroll(function () {
+      if ($(this).scrollTop() > 150 && window.innerWidth >= 800) {
+        introductionh.addClass("introduction-hidden");
+      } else if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
+        introductionh.addClass("introduction-hidden");
+      } else {
+      introductionh.removeClass("introduction-hidden");
+    }
+    });
+
+  });
+
+</script>
+
+<script src="js/fb.js"></script>
+
+<!--text-->
+
+<script src="js/typeit.js"></script>
+
+</head>
+
+<body>
+<div class="header">
+  <div class="container">
+    <div class="row">
+		  <div class="cols col-4 phone">
+        <ul>
+          <li>(093) 103 1 103</li>
+          <li>(097) 103 1 103</li>
+        </ul>
+      </div>
+
+      <div class="cols col-4 logo">
+        <a href="#"><img src="img/logo1.png" alt=""></a>
+      </div>
+
+      <div class="cols col-4 addres">
+        <ul>
+          <li>г. Киев</li>
+          <li class="street">ул. Платона Майбороды 32</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div><!-- header -->
+
+<div class="menu menu-fixed-m">
+
+  <div class="menu-container">
+  <div class="container">
+
+    <div class="cols col-2 mobile-menu">
+      <div class="menu-m menu-mob">
+                <!-- Иконка меню -->
+                <div class="icon-close">
+                  <img src="img/close-btn.png">
+                </div>
+
+                <!-- Меню -->
+                <ul>
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="aboutus.html">Знакомство</a></li>
+                  <li><a href="#">Консультация</a>
+                    <ul>
+                      <li class="active"><a href="online.html">Онлайн консультация</a></li>
+                      <li><a href="meeting.html">Очная консультация</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="therapy.html">Лечение</a></li>
+                  <li><a href="#">Медиа</a></li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+
+
+                <div class="icon-menu">
+                  <img src="img/menu-ham-icon.png">
+                </div>
+    </div>
+
+    <div class="cols col-8 phone-mobile">
+      <ul>
+        <li>(093) 103 1 103</li>
+        <li>(097) 103 1 103</li>
+      </ul>
+    </div>
+
+    <div class="cols col-2 lang-menu">
+      <div id="m_body">
+				<ul>
+					<li class="border-ru"><a href="#" onclick="menuOpen('s_mn_1');return(false)">RU</a>
+						<ul id="s_mn_1">
+							 <li><a href="#">UA</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+   </div>
+
+   <div class="cols col-2 logo-fixed">
+      <a href="#"><img src="img/logo_fixed.png"/></a>
+   </div>
+
+   <div class="cols col-2 logo-fixed-m">
+      <a href="#"><img src="img/brain-m.png"/></a>
+    </div>
+
+    <div class="cols col-8 main-menu">
+      <ul class="menu-font">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="aboutus.html">Знакомство</a></li>
+        <li><a href="#">Консультация</a>
+          <ul class="drop-down">
+            <li class="active"><a href="online.html">Онлайн консультация</a></li>
+            <li><a href="meeting.html">Очная консультация</a></li>
+          </ul>
+        </li>
+        <li><a href="therapy.html">Лечение</a></li>
+        <li><a href="#">Медиа</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="cols col-2 button">
+      <a href="#">ЗАПИСЬ НА ПРИЙОМ</a>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="header-mobile">
+    <div class="container">
+        <div class="cols col-12">
+          <a href="#"><img src="img/logo1.png" alt=""></a>
+        </div>
+      </div>
+  </div><!-- header-mobile -->
+
+  <div class="button-mobile">
+    <div class="container">
+      <div class="cols col-12">
+        <a href="#">ЗАПИСЬ НА ПРИЙОМ</a>
+      </div>
+    </div>
+  </div>
+
+</div><!--end menu-->
+
+
+<div class="online">
+
+  <div class="introduction">
+    <div class="container">
+
+      <div class="cols col-12">
+        <div class="title">
+          <h1 class="header-post">Онлайн консультация</h1>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <img src="img/online.png" alt="">
+    <div class="cols col-12 online-inner">
+          <p class="notes">Заповніть анкету нижче для отримання онлайн консультації. Опишіть коротко але змістовно Ваш діагноз. Додайте в одному архіві .rar або .zip формату відскановані або сфотографовані екземпляри заключень, анамнезів і результатів досліджень, зміст (усі файли) дисків зі знімками МРТ, КТ або ПЕТ КТ бажано в хронологічному порядку.</p>
+          <p class="notes">Після відправлення наш співробітник зв’яжеться з Вами за вказаним номером телефону або ж електронною поштою якнайшвидше.</p>
+          <form action="" method="post" class="wpcf7-form">
+          <p>ФИО пациента<br>
+          <input name="your-name" value="" size="40" type="text"></p>
+          <p>Номер телефона<br>
+          <input name="your-email" value="" size="40" type="email"></p>
+          <p>Электронный адрес<br>
+          <input name="your-subject" value="" size="40" type="text"></p>
+          <p>Коротко о диагнозе<br>
+          <textarea name="your-message" cols="40" rows="10"></textarea></p>
+          <p>Завантажити файл<br>
+          <input name="your-subject" value="" size="40" type="file"></p>
+          <input type="checkbox" id="subscribe-field"> <label for="subscribe-field">Натисканням на цю кнопку я висловлюю інформовану добровільну згоду на обробку персональних даних за умови дотримання їх захисту відповідно до вимог Закону України “Про захист персональних даних”.</label>
+
+          <p><br></p>
+          <p><input value="Отправить" type="submit"><span class="ajax-loader"></span></p>
+          <div class="wpcf7-response-output wpcf7-display-none">
+          </div>
+        </form>
+
+    </div>
+
+    <p class="notes">Заповніть анкету нижче для отримання онлайн консультації. Опишіть коротко але змістовно Ваш діагноз. Додайте в одному архіві .rar або .zip формату відскановані або сфотографовані екземпляри заключень, анамнезів і результатів досліджень, зміст (усі файли) дисків зі знімками МРТ, КТ або ПЕТ КТ бажано в хронологічному порядку.</p>
+    <p class="notes">Після відправлення наш співробітник зв’яжеться з Вами за вказаним номером телефону або ж електронною поштою якнайшвидше.</p>
+    <p class="notes">Заповніть анкету нижче для отримання онлайн консультації. Опишіть коротко але змістовно Ваш діагноз. Додайте в одному архіві .rar або .zip формату відскановані або сфотографовані екземпляри заключень, анамнезів і результатів досліджень, зміст (усі файли) дисків зі знімками МРТ, КТ або ПЕТ КТ бажано в хронологічному порядку.</p>
+    <p class="notes">Після відправлення наш співробітник зв’яжеться з Вами за вказаним номером телефону або ж електронною поштою якнайшвидше.</p>
+
+
+  </div>
+
+</div>
+
+
+<div class="footer">
+  <div class="container">
+    <div class="cols col-2 copyright">
+      <p><i class="fa fa-copyright" aria-hidden="true"></i>2018 shkiryak.com.ua</p>
+    </div>
+    <div class="cols col-7">
+      <p>Информация на сайте предназначена только для ознакомления. Проконсультируйтесь со специалистом, чтобы не нанести вред своему здоровью.
+      </p>
+    </div>
+    <div class="cols col-3 soc-icons">
+      <div>
+        <a href="https://www.facebook.com/shkiryakofficial/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/DrShkiryak" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/anthonyshkiryak/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/channel/UCVlyfBRYnvjN09irXqQdw6g/" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/anton-shkiryak-898256b4/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+      new TypeIt('#example4', {
+      speed: 100,
+      strings: ['Для меня важно, чтобы пациент был поинформирован.', 'Для меня важно, чтобы пациент был поинформирован.'],
+      loop: true,
+      breakLines: false
+      });
+		</script>
+
+  <script src="js/menu.js"></script>
+
+</body>
+</html>

@@ -134,22 +134,12 @@
 <div class="header">
   <div class="container">
     <div class="row">
-		  <div class="cols col-4 phone">
-        <ul>
-          <li>(093) 103 1 103</li>
-          <li>(097) 103 1 103</li>
-        </ul>
+		  <div class="cols col-4 logo">
+        <a href="#"><img src="img/logo1-new.png" alt=""></a>
       </div>
 
-      <div class="cols col-4 logo">
-        <a href="#"><img src="img/logo1.png" alt=""></a>
-      </div>
-
-      <div class="cols col-4 addres">
-        <ul>
-          <li>г. Киев</li>
-          <li class="street">ул. Платона Майбороды 32</li>
-        </ul>
+      <div class="cols col-8">
+          <p id="example1"></p>
       </div>
     </div>
   </div>
@@ -174,8 +164,8 @@
                   <li><a href="aboutus.html">Знакомство</a></li>
                   <li><a href="#">Консультация</a>
                     <ul>
-                      <li><a href="online.html">Онлайн консультация</a></li>
                       <li><a href="meeting.html">Очная консультация</a></li>
+                      <li><a href="online.html">Онлайн консультация</a></li>
                     </ul>
                   </li>
                   <li><a href="therapy.html">Лечение</a></li>
@@ -224,8 +214,8 @@
         <li><a href="aboutus.html">Знакомство</a></li>
         <li><a href="#">Консультация</a>
           <ul class="drop-down">
-            <li><a href="online.html">Онлайн консультация</a></li>
             <li><a href="meeting.html">Очная консультация</a></li>
+            <li><a href="online.html">Онлайн консультация</a></li>
           </ul>
         </li>
         <li><a href="therapy.html">Лечение</a></li>
@@ -264,7 +254,7 @@
   <div class="container">
     <div class="cols col-12">
       <img src="img/bannernew.jpg">
-      <p>Сучаcний погляд на <br><span>нейрохірургію та онкологію</span></p>
+      <!--<p>Сучаcний погляд на <br><span>нейрохірургію та онкологію</span></p>-->
     </div>
   </div>
 </div>
@@ -273,7 +263,7 @@
   <div class="container">
     <div class="cols col-12">
       <img src="img/bannernew_m.jpg">
-      <p>Сучаcний погляд на <br><span>нейрохірургію та онкологію</span></p>
+      <!--<p>Сучаcний погляд на <br><span>нейрохірургію та онкологію</span></p>-->
     </div>
   </div>
 </div>
@@ -458,24 +448,24 @@
 </div>
 
 
-<div class="text-main">
+<!--<div class="text-main">
   <div class="container">
     <div class="cols col-12">
       <p id="example4"></p>
     </div>
   </div>
-</div>
+</div>-->
 
 <div class="social">
   <div class="container">
-    <div class="cols col-6">
+    <div class="cols col-12">
       <div class="widget-facebook">
 				  <iframe id="facebook_iframe" class="facebook_iframe"></iframe>
 			</div>
     </div>
-    <div class="cols col-6">
+    <!--<div class="cols col-6">
       <iframe class="yt_ifrane" width="560" height="315" src="https://www.youtube.com/embed/9ATawrVcDY4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+    </div>-->
   </div>
 </div>
 
@@ -500,14 +490,22 @@
   </div>
 </div>
 
-    <script>
+  <!--  <script>
       new TypeIt('#example4', {
       speed: 100,
       strings: ['Для меня важно, чтобы пациент был поинформирован.', 'Для меня важно, чтобы пациент был поинформирован.'],
       loop: true,
       breakLines: false
       });
-		</script>
+		</script>-->
+
+  <script>
+      new TypeIt('#example1', {
+      strings: 'НЕЙРОХИРУРГИЯ И ОНКОЛОГИЯ',
+      speed: 100,
+      autoStart: false,
+    });
+	</script>
 
   <script src="js/menu.js"></script>
 

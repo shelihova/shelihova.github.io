@@ -65,6 +65,10 @@ a[href^="tel"]{
 
 /************************header***************************/
 
+.header {
+	height: 150px;
+}
+
 .header .phone,
 .header .addres{
   padding-top: 45px;
@@ -93,16 +97,22 @@ a[href^="tel"]{
 }
 
 .header .logo img{
-  height: 120px;
-  width: 120px;
+  width: 200px;
   margin: 0 auto;
-  margin-top: 20px;
   display: block;
-  margin-bottom: 10px;
+  float: left;
+	margin-top: 50px;
 }
 
 .header-mobile{
 	display: none;
+}
+
+#example1{
+	color: #fe0000;
+	font-size: 33px;
+	text-align: right;
+	line-height: 150px;
 }
 
 /*********************menu************************/
@@ -322,8 +332,8 @@ transition: 0.5s ease-in-out;
 /********************stat************************/
 
 .stat{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .stat h2{
@@ -564,6 +574,7 @@ h3.city-name {
 .blog{
   margin-top: 100px;
   height: 406px;
+	margin-bottom: 100px;
 }
 
 .blog .blog-border{
@@ -631,6 +642,7 @@ h3.city-name {
 .widget-facebook {
   height: 315px;
   margin: 0 auto;
+	max-width: 500px;
 }
 
 .widget-facebook .facebook_iframe {
@@ -699,6 +711,9 @@ h3.city-name {
 .introduction .header-post{
 	line-height: 50px;
 	font-size: 30px;
+	color: #fe0000;
+	font-size: 20px;
+	text-transform: uppercase;
 }
 
 .online {
@@ -1069,7 +1084,7 @@ div.msg, ul li i:before, ul li i:after {
 /*****************про нас*******************************/
 
 
-.aboutus{
+.aboutus-main{
 	margin-top: 30px;
 	font-size: 17px;
 }
@@ -1079,16 +1094,9 @@ div.msg, ul li i:before, ul li i:after {
 }
 
 .aboutus img{
-	float: left;
-	margin: 15px;
-	margin-left: 0;
-	margin-top: 0;
-}
-
-.aboutus .img-2{
-	float: right;
-	margin: 15px;
-	margin-right: 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
 }
 
 @media screen and (min-width: 300px) and (max-width: 479px) {
@@ -2323,6 +2331,10 @@ div.msg, ul li i:before, ul li i:after {
 
 	.header-mobile{
 		display: none;
+	}
+
+	#example1{
+		font-size: 30px;
 	}
 
 	.header-mobile-hidden{

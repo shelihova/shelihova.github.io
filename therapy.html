@@ -140,30 +140,20 @@
 </head>
 
 <body>
-<div class="header">
-  <div class="container">
-    <div class="row">
-		  <div class="cols col-4 phone">
-        <ul>
-          <li>(093) 103 1 103</li>
-          <li>(097) 103 1 103</li>
-        </ul>
-      </div>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+  		  <div class="cols col-4 logo">
+          <a href="#"><img src="img/logo1-new.png" alt=""></a>
+        </div>
 
-      <div class="cols col-4 logo">
-        <a href="#"><img src="img/logo1.png" alt=""></a>
-      </div>
-
-      <div class="cols col-4 addres">
-        <ul>
-          <li>г. Киев</li>
-          <li class="street">ул. Платона Майбороды 32</li>
-        </ul>
+        <div class="cols col-8">
+            <p id="example1"></p>
+        </div>
       </div>
     </div>
-  </div>
 
-</div><!-- header -->
+  </div><!-- header -->
 
 <div class="menu menu-fixed-m">
 
@@ -183,8 +173,8 @@
                   <li><a href="aboutus.html">Знакомство</a></li>
                   <li><a href="#">Консультация</a>
                     <ul>
-                      <li><a href="online.html">Онлайн консультация</a></li>
                       <li><a href="meeting.html">Очная консультация</a></li>
+                      <li><a href="online.html">Онлайн консультация</a></li>
                     </ul>
                   </li>
                   <li class="active"><a href="therapy.html">Лечение</a></li>
@@ -233,8 +223,8 @@
         <li><a href="aboutus.html">Знакомство</a></li>
         <li><a href="#">Консультация</a>
           <ul class="drop-down">
-            <li><a href="online.html">Онлайн консультация</a></li>
             <li><a href="meeting.html">Очная консультация</a></li>
+            <li><a href="online.html">Онлайн консультация</a></li>
           </ul>
         </li>
         <li class="active"><a href="therapy.html">Лечение</a></li>
@@ -277,7 +267,7 @@
 
       <div class="cols col-12">
         <div class="title">
-          <h1 class="header-post"></h1>
+          <h1 class="header-post">Лечение</h1>
         </div>
       </div>
 
@@ -562,14 +552,22 @@
   </div>
 </div>
 
-    <script>
-      new TypeIt('#example4', {
-      speed: 100,
-      strings: ['Для меня важно, чтобы пациент был поинформирован.', 'Для меня важно, чтобы пациент был поинформирован.'],
-      loop: true,
-      breakLines: false
-      });
-		</script>
+<!--  <script>
+    new TypeIt('#example4', {
+    speed: 100,
+    strings: ['Для меня важно, чтобы пациент был поинформирован.', 'Для меня важно, чтобы пациент был поинформирован.'],
+    loop: true,
+    breakLines: false
+    });
+  </script>-->
+
+<script>
+    new TypeIt('#example1', {
+    strings: 'НЕЙРОХИРУРГИЯ И ОНКОЛОГИЯ',
+    speed: 100,
+    autoStart: false,
+  });
+</script>
 
   <script src="js/menu.js"></script>
 

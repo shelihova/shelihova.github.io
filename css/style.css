@@ -204,7 +204,7 @@ a[href^="tel"]{
   margin: 0 auto;
   left:50%;
   float:left;
-	font-size: 16px;
+	font-size: 15px;
 	position:relative;
 }
 
@@ -292,6 +292,10 @@ transition: 0.5s ease-in-out;
 .logo-hidden-m{
 	display: none;
 }
+
+	.phone-m{
+		display: none;
+	}
 
 /**********************BANNER*******************************/
 
@@ -1126,7 +1130,7 @@ div.msg, ul li i:before, ul li i:after {
 	}
 
 	.menu-container{
-		height: 60px;
+		height: 70px;
 		background-color: #CDCDCD;
 	}
 
@@ -1225,13 +1229,14 @@ div.msg, ul li i:before, ul li i:after {
 
 	.menu-m ul li {
 
-	  line-height: 45px;
+	  line-height: 25px;
 	  padding-bottom: 3px;
 	  padding-left: 20px;
 	  padding-top: 3px;
 	  float: none;
 
 	}
+
 
 	.menu-m li:hover {
 	  cursor: pointer;
@@ -1250,6 +1255,38 @@ div.msg, ul li i:before, ul li i:after {
 		padding-left: 20px;
 	}
 
+	.menu-m p{
+		color: #CDCDCD;
+		margin-top: 10px;
+		margin-left: 40px;
+		float: left;
+	}
+
+	.lang-menu-mob{
+		margin-top: 20px;
+	}
+
+	.lang-menu-mob ul li{
+		display: inline-block;
+		padding-left: 5px;
+	}
+
+	.lang-menu-mob ul li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 0px;
+    border: 1px solid #CDCDCD;
+    padding-left: 0px;
+		padding: 5px;
+	}
+
+.lang-menu-mob ul .active-m a{
+	background: #CDCDCD;
+}
+
 	.icon-close {
 	  cursor: pointer;
 	  padding-left: 10px;
@@ -1261,7 +1298,7 @@ div.msg, ul li i:before, ul li i:after {
 	  color: #fff;
 	  cursor: pointer;
 	  font-size: 20px;
-	  margin-top: 10px;
+	  margin-top: 15px;
 	  text-decoration: none;
 	  text-transform: uppercase;
 		width: 100%;
@@ -1272,29 +1309,65 @@ div.msg, ul li i:before, ul li i:after {
 	}
 
 
-	.button-mobile .col-12{
+	.button-mobile{
 	  text-align: center;
+		display: block;
+		width: 85%;
+		background-color: #CDCDCD;
+		margin: 0 auto;
 	}
 
-	.button-mobile .col-12 a{
+	.button-mobile a{
 	  display: block;
 	  color: #ffffff;
 	  text-decoration: none;
 	  font-weight: bold;
-	  padding: 10px;
-	  margin-top: 10px;
+	  padding: 10px 5px;
+		margin-top: 14px;
 	  background-color: #fe0000;
-	  font-size: 15px;
+	  font-size: 12px;
 	  width: 100%;
-	  float: right;
 	}
 
-	.button-mobile{
+	.phone-m{
+		text-align: center;
+		border: 2px solid #666666;
+		height: 40px;
+		width: 43px;
+		margin-top: 14px;
+		float: right;
 		display: block;
-	width: 100%;
-	background-color: #CDCDCD;
-	height: 60px;
 	}
+
+	.lang-menu{
+		display: none;
+	}
+
+	.phone-m a{
+		font-size: 25px;
+		color: #666666;
+		line-height: 40px;
+	}
+
+	.phone-m img{
+		width: 100%;
+		margin-top: 7px;
+	}
+
+.slogan-m{
+	width: 100%;
+	height: 70px;
+	background: #CDCDCD;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 8.5px;
+	text-align: center;
+	line-height: 70px;
+}
+
+.slogan-m h1{
+	font-weight: normal;
+}
 
 	.banner{
 		display: none;
@@ -1329,8 +1402,9 @@ div.msg, ul li i:before, ul li i:after {
 	  color: #fe0000;
 	}
 
-	.banner-m-hidden{
-		margin-top: 133px;
+	.stat {
+    margin-top: 50px;
+    margin-bottom: 50px;
 	}
 
 	.stat .container .cols.col-3{
@@ -1352,6 +1426,10 @@ div.msg, ul li i:before, ul li i:after {
 		margin-top: 20px;
 		display: block;
 	}
+
+	.patient {
+    margin-bottom: 0;
+}
 
 	.patient .container .cols.col-3,
 	.patient .container .cols.col-6{
@@ -1407,6 +1485,11 @@ div.msg, ul li i:before, ul li i:after {
 	.blog {
     margin-top: 50px;
 		height: auto;
+		margin-bottom: 50px;
+	}
+
+	.blog .blog-border{
+		margin-right: 0;
 	}
 
 	.text-main{
@@ -1435,7 +1518,7 @@ div.msg, ul li i:before, ul li i:after {
 
 	.widget-facebook{
 		margin-bottom: 20px;
-
+		margin-top: 20px;
 	}
 
 	.yt_ifrane{
@@ -1505,6 +1588,12 @@ div.msg, ul li i:before, ul li i:after {
 	.aboutus img{
 		width: 100%;
 	}
+
+	.introduction .header-post {
+    color: #666666;
+    font-size: 18px;
+		font-weight: normal;
+}
 
 }
 

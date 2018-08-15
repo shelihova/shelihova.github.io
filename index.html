@@ -259,8 +259,6 @@
 </div>
 </div>
 
-
-
 </div><!--end menu-->
 
 <div class="header-mobile">
@@ -575,7 +573,7 @@
 			if(mailvalid == true && msglen >= 4) {
 				// if both validate we attempt to send the e-mail
 				// first we hide the submit btn so the user doesnt click twice
-				$("#send").replaceWith("<em>sending...</em>");
+				$("#send").replaceWith("<em>Отправка...</em>");
 
 				$.ajax({
 					type: 'POST',
@@ -584,7 +582,7 @@
 					success: function(data) {
 						if(data == "true") {
 							$("#contact").fadeOut("fast", function(){
-								$(this).before("<p><strong>Success! Your feedback has been sent, thanks :)</strong></p>");
+								$(this).before("<p>Готово! Ваша заявка на запись принята. <strong>В ближайшее время помощник Антона Антоновича свяжется с Вами для уточнения даты, времени и других деталей консультации.</strong></p>");
 								setTimeout("$.fancybox.close()", 1000);
 							});
 						}

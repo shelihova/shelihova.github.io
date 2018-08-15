@@ -108,9 +108,6 @@
         bannerm.removeClass("banner-m-hidden");
       }
     });
-
-
-
   });
 
 </script>
@@ -120,6 +117,11 @@
 <!--text-->
 
 <script src="js/typeit.js"></script>
+
+<!--форма-->
+
+<link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
 
 </head>
 
@@ -239,8 +241,22 @@
       </ul>
     </div>
 
-    <div class="cols col-2 button">
-      <a href="#">ЗАПИСЬ НА ПРИЙОМ</a>
+    <div id="wrapper" class="cols col-2 button">
+      <a class="modalbox" href="#inline">ЗАПИСЬ НА ПРИЙОМ</a>
+    </div>
+
+    <div id="inline">
+       <h2>Отправка сообщения</h2>
+
+       <form id="contact" name="contact" action="#" method="post">
+          <label for="email">Ваш E-mail</label>
+          <input type="email" id="email" name="email" class="txt">
+          <br>
+          <label for="msg">Введите сообщение</label>
+          <textarea id="msg" name="msg" class="txtarea"></textarea>
+
+          <button id="send">Отправить E-mail</button>
+       </form>
     </div>
 
   </div>
@@ -524,6 +540,49 @@
 	</script>
 
   <script src="js/menu.js"></script>
+
+  <!-- basic fancybox setup -->
+<script type="text/javascript">
+	function validateEmail(email) {
+		var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return reg.test(email);
+	}
+
+	$(document).ready(function() {
+		$(".modalbox").fancybox();
+		$("#contact").submit(function() { return false; });
+
+
+		$("#send").on("click", function(){
+			var emailval  = $("#email").val();
+			var msgval    = $("#msg").val();
+			var msglen    = msgval.length;
+			var mailvalid = validateEmail(emailval);
+
+
+
+			if(mailvalid == true && msglen >= 4) {
+				// если обе проверки пройдены
+				// сначала мы скрываем кнопку отправки
+				$("#send").replaceWith("<em>отправка...</em>");
+
+				$.ajax({
+					type: 'POST',
+					url: 'sendmessage.php',
+					data: $("#contact").serialize(),
+					success: function(data) {
+						if(data == "true") {
+							$("#contact").fadeOut("fast", function(){
+								$(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
+								setTimeout("$.fancybox.close()", 1000);
+							});
+						}
+					}
+				});
+			}
+		});
+	});
+</script>
 
 </body>
 </html>

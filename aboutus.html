@@ -4,156 +4,143 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anton Shkiryak</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="fonts/ProximaNova/stylesheet.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="fonts/ProximaNova/stylesheet.css">
 
-<script src="js/jquery-2.1.3.min.js"></script>
-
-<!--відгуки-->
-
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/custom.js"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
 
 
-<!--lag-menu-->
+  <!--анімація-->
 
-<script type="text/javascript">
-    var m_id = new Array('s_mn_1');
-    listStart = function allclose() {
-      for (i=0; i < m_id.length; i++){
-      document.getElementById(m_id[i]).style.display = "none";
+  <link rel="stylesheet" type="text/css" media="all" href="css/animate.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+
+  <!--відгуки-->
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <!--lag-menu-->
+
+  <script type="text/javascript">
+      var m_id = new Array('s_mn_1');
+      listStart = function allclose() {
+        for (i=0; i < m_id.length; i++){
+        document.getElementById(m_id[i]).style.display = "none";
+        }
       }
-    }
-    function menuOpen(id){
-      for (i=0; i < m_id.length; i++){
-      if (id != m_id[i]){
-      document.getElementById(m_id[i]).style.display = "none";
+      function menuOpen(id){
+        for (i=0; i < m_id.length; i++){
+        if (id != m_id[i]){
+        document.getElementById(m_id[i]).style.display = "none";
+        }
+        }
+        if (document.getElementById(id).style.display == "block"){
+        document.getElementById(id).style.display = "none";
+        }else{
+        document.getElementById(id).style.display = "block";
+        }
       }
-      }
-      if (document.getElementById(id).style.display == "block"){
-      document.getElementById(id).style.display = "none";
-      }else{
-      document.getElementById(id).style.display = "block";
-      }
-    }
-    window.onload=listStart;
-</script>
+      window.onload=listStart;
+  </script>
 
-<!--menu fixed-->
-<script type="text/javascript">
+  <!--menu fixed-->
+  <script type="text/javascript">
 
-  jQuery("document").ready(function($){
+    jQuery("document").ready(function($){
 
-  	var nav = $('.menu');
+    	var nav = $('.menu');
 
-  	$(window).scroll(function () {
-  		if ($(this).scrollTop() > 150 && window.innerWidth >= 800 ) {
-  			nav.addClass("f-menu");
-  		} else if ($(this).scrollTop() > 5 && window.innerWidth < 800 ) {
-          nav.addClass("f-menu");
+    	$(window).scroll(function () {
+    		if ($(this).scrollTop() > 150 && window.innerWidth >= 1100 ) {
+    			nav.addClass("f-menu");
+    		} else if ($(this).scrollTop() > 0 && window.innerWidth < 1100 ) {
+            nav.addClass("f-menu");
+          } else {
+    			nav.removeClass("f-menu");
+    		}
+      });
+
+     var logo = $('.logo-fixed');
+      $(window).scroll(function () {
+    		if ($(this).scrollTop() > 150 && window.innerWidth >= 1100) {
+    			logo.addClass("logo-hidden");
+    		} else {
+    			logo.removeClass("logo-hidden");
+    		}
+    	});
+
+      var logom = $('.logo-fixed-m');
+       $(window).scroll(function () {
+     		if ($(this).scrollTop() > 5 && window.innerWidth < 1100) {
+     			logom.addClass("logo-hidden-m");
+     		} else {
+     			logom.removeClass("logo-hidden-m");
+     		}
+     	});
+
+      var lang = $('.lang-menu');
+       $(window).scroll(function () {
+     		if ($(this).scrollTop() > 150 && window.innerWidth >= 1100) {
+     			lang.addClass("lang-hidden");
+     		} else if ($(this).scrollTop() > 5 && window.innerWidth < 1100) {
+            lang.addClass("lang-hidden");
+          } else {
+     			lang.removeClass("lang-hidden");
+     		}
+     	});
+
+      var font = $('.menu-font');
+       $(window).scroll(function () {
+     		if ($(this).scrollTop() > 150) {
+     			font.addClass("font-fixed");
+     		} else {
+     			font.removeClass("font-fixed");
+     		}
+     	});
+
+
+      var bannerm = $('.banner-m');
+       $(window).scroll(function () {
+        if ($(this).scrollTop() > 1 && window.innerWidth < 1100) {
+          bannerm.addClass("banner-m-hidden");
         } else {
-  			nav.removeClass("f-menu");
-  		}
+          bannerm.removeClass("banner-m-hidden");
+        }
+      });
     });
 
-   var logo = $('.logo-fixed');
-    $(window).scroll(function () {
-  		if ($(this).scrollTop() > 150 && window.innerWidth >= 800) {
-  			logo.addClass("logo-hidden");
-  		} else {
-  			logo.removeClass("logo-hidden");
-  		}
-  	});
+  </script>
 
-    var logom = $('.logo-fixed-m');
-     $(window).scroll(function () {
-   		if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
-   			logom.addClass("logo-hidden-m");
-   		} else {
-   			logom.removeClass("logo-hidden-m");
-   		}
-   	});
+  <script src="js/fb.js"></script>
 
-    var lang = $('.lang-menu');
-     $(window).scroll(function () {
-   		if ($(this).scrollTop() > 150 && window.innerWidth >= 800) {
-   			lang.addClass("lang-hidden");
-   		} else if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
-          lang.addClass("lang-hidden");
-        } else {
-   			lang.removeClass("lang-hidden");
-   		}
-   	});
+  <!--text-->
 
-    var font = $('.menu-font');
-     $(window).scroll(function () {
-   		if ($(this).scrollTop() > 150) {
-   			font.addClass("font-fixed");
-   		} else {
-   			font.removeClass("font-fixed");
-   		}
-   	});
-
-    var headerm = $('.header-mobile');
-     $(window).scroll(function () {
-   		if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
-   			headerm.addClass("header-mobile-hidden");
-   		} else {
-   			headerm.removeClass("header-mobile-hidden");
-   		}
-   	});
-
-    var bannerm = $('.banner-m');
-     $(window).scroll(function () {
-      if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
-        bannerm.addClass("banner-m-hidden");
-      } else {
-        bannerm.removeClass("banner-m-hidden");
-      }
-    });
-
-    var introductionh = $('.introduction');
-     $(window).scroll(function () {
-      if ($(this).scrollTop() > 150 && window.innerWidth >= 800) {
-        introductionh.addClass("introduction-hidden");
-      } else if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
-        introductionh.addClass("introduction-hidden");
-      } else {
-      introductionh.removeClass("introduction-hidden");
-    }
-    });
-
-  });
-
-</script>
-
-<script src="js/fb.js"></script>
-
-<!--text-->
-
-<script src="js/typeit.js"></script>
+  <script src="js/typeit.js"></script>
 
 </head>
 
 <body>
-  <div class="header">
-    <div class="container">
-      <div class="row">
-  		  <div class="cols col-4 logo">
-          <a href="#"><img src="img/logo1-new.png" alt=""></a>
-        </div>
+<div class="header">
+  <div class="container">
+    <div class="row">
+		  <div class="cols col-4 logo">
+        <a href="#"><img src="img/logo1-new.png" alt=""></a>
+      </div>
 
-        <div class="cols col-8">
-            <p id="example1"></p>
-        </div>
+      <div class="cols col-8">
+          <p class="animated fadeInUp">НЕЙРОХИРУРГИЯ И ОНКОЛОГИЯ</p>
       </div>
     </div>
+  </div>
 
-  </div><!-- header -->
+</div><!-- header -->
 
 <div class="menu menu-fixed-m">
 
@@ -165,11 +152,12 @@
                 <!-- Иконка меню -->
                 <div class="icon-close">
                   <img src="img/close-btn.png">
+
                 </div>
 
                 <!-- Меню -->
                 <ul>
-                  <li><a href="index.html">Главная</a></li>
+                  <li class="active"><a href="index.html">Главная</a></li>
                   <li class="active"><a href="aboutus.html">Знакомство</a></li>
                   <li><a href="#">Консультация</a>
                     <ul>
@@ -178,24 +166,47 @@
                     </ul>
                   </li>
                   <li><a href="therapy.html">Лечение</a></li>
+                  <li><a href="#">Отзывы</a></li>
                   <li><a href="#">Медиа</a></li>
                   <li><a href="#">Блог</a></li>
                   <li><a href="#">Контакты</a></li>
+
                 </ul>
+              <div class="lang-menu-mob">
+              <p>ЯЗЫК</p>
+              <ul>
+                <li class="active-m"><a href="#">RU</a></li>
+                <li><a href="#">UA</a></li>
+              </ul>
+              </div>
               </div>
 
 
                 <div class="icon-menu">
                   <img src="img/menu-ham-icon.png">
                 </div>
+
+
     </div>
 
-    <div class="cols col-8 phone-mobile">
+    <div class="cols col-8">
+      <div id="wrapper" class="button-mobile">
+          <p><a class="modalbox" href="#inline">ЗАПИСЬ НА ПРИЙОМ</a></p>
+      </div>
+    </div>
+
+    <div class="cols col-2">
+      <div class="phone-m">
+        <a href="tel:‎+380971031103">‎<i class="fa fa-phone" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <!--<div class="cols col-8 phone-mobile">
       <ul>
         <li>(093) 103 1 103</li>
         <li>(097) 103 1 103</li>
       </ul>
-    </div>
+    </div>-->
 
     <div class="cols col-2 lang-menu">
       <div id="m_body">
@@ -213,11 +224,7 @@
       <a href="#"><img src="img/logo_fixed.png"/></a>
    </div>
 
-   <div class="cols col-2 logo-fixed-m">
-      <a href="#"><img src="img/brain-m.png"/></a>
-    </div>
-
-    <div class="cols col-8 main-menu">
+   <div class="cols col-8 main-menu">
       <ul class="menu-font">
         <li><a href="index.html">Главная</a></li>
         <li class="active"><a href="aboutus.html">Знакомство</a></li>
@@ -228,36 +235,46 @@
           </ul>
         </li>
         <li><a href="therapy.html">Лечение</a></li>
+        <li><a href="#">Отзывы</a></li>
         <li><a href="#">Медиа</a></li>
         <li><a href="#">Блог</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
     </div>
 
-    <div class="cols col-2 button">
-      <a href="#">ЗАПИСЬ НА ПРИЙОМ</a>
-    </div>
+<div id="wrapper" class="cols col-2 button">
+	<p><a class="modalbox" href="#inline">ЗАПИСЬ НА ПРИЙОМ</a></p>
+</div>
 
-  </div>
-  </div>
+<!-- hidden inline form -->
+<div id="inline">
 
-  <div class="header-mobile">
-    <div class="container">
-        <div class="cols col-12">
-          <a href="#"><img src="img/logo1.png" alt=""></a>
-        </div>
-      </div>
-  </div><!-- header-mobile -->
+	<form id="contact" name="contact" action="#" method="post">
+    <legend>Быстрая запись на консультацию</legend>
+    <label for="name">Имя пациента</label><br>
+		<input type="text" id="name" name="name" class="txt"><br>
+		<label for="email">Номер телефона</label><br>
+		<input type="email" id="email" name="email" class="txt">
+		<br>
+		<label for="msg">Коротко о диагнозе и/или о жалобах</label><br>
+		<textarea id="msg" name="msg" class="txtarea"></textarea>
 
-  <div class="button-mobile">
-    <div class="container">
-      <div class="cols col-12">
-        <a href="#">ЗАПИСЬ НА ПРИЙОМ</a>
-      </div>
-    </div>
-  </div>
+		<button id="send">ЗАПИСАТСЯ</button>
+	</form>
+</div>
+
+</div>
+</div>
 
 </div><!--end menu-->
+
+<div class="header-mobile">
+<div class="container">
+    <div class="cols col-12">
+      <a href="#"><img src="img/logo1.png" alt=""></a>
+    </div>
+  </div>
+</div><!-- header-mobile -->
 
 
 <div class="aboutus">
@@ -331,7 +348,63 @@
   });
 </script>
 
-  <script src="js/menu.js"></script>
+<script src="js/menu.js"></script>
+
+
+<!-- basic fancybox setup -->
+<script type="text/javascript">
+function validateEmail(email) {
+  var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return reg.test(email);
+}
+
+$(document).ready(function() {
+  $(".modalbox").fancybox();
+  $("#contact").submit(function() { return false; });
+
+
+  $("#send").on("click", function(){
+    var emailval  = $("#email").val();
+    var msgval    = $("#msg").val();
+    var msglen    = msgval.length;
+    var mailvalid = validateEmail(emailval);
+
+    if(mailvalid == false) {
+      $("#email").addClass("error");
+    }
+    else if(mailvalid == true){
+      $("#email").removeClass("error");
+    }
+
+    if(msglen < 4) {
+      $("#msg").addClass("error");
+    }
+    else if(msglen >= 4){
+      $("#msg").removeClass("error");
+    }
+
+    if(mailvalid == true && msglen >= 4) {
+      // if both validate we attempt to send the e-mail
+      // first we hide the submit btn so the user doesnt click twice
+      $("#send").replaceWith("<em>Отправка...</em>");
+
+      $.ajax({
+        type: 'POST',
+        url: 'sendmessage.php',
+        data: $("#contact").serialize(),
+        success: function(data) {
+          if(data == "true") {
+            $("#contact").fadeOut("fast", function(){
+              $(this).before("<p>Готово! Ваша заявка на запись принята. <strong>В ближайшее время помощник Антона Антоновича свяжется с Вами для уточнения даты, времени и других деталей консультации.</strong></p>");
+              setTimeout("$.fancybox.close()", 1000);
+            });
+          }
+        }
+      });
+    }
+  });
+});
+</script>
 
 </body>
 </html>

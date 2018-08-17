@@ -58,9 +58,9 @@
     	var nav = $('.menu');
 
     	$(window).scroll(function () {
-    		if ($(this).scrollTop() > 150 && window.innerWidth >= 800 ) {
+    		if ($(this).scrollTop() > 150 && window.innerWidth >= 1100 ) {
     			nav.addClass("f-menu");
-    		} else if ($(this).scrollTop() > 0 && window.innerWidth < 800 ) {
+    		} else if ($(this).scrollTop() > 0 && window.innerWidth < 1100 ) {
             nav.addClass("f-menu");
           } else {
     			nav.removeClass("f-menu");
@@ -69,7 +69,7 @@
 
      var logo = $('.logo-fixed');
       $(window).scroll(function () {
-    		if ($(this).scrollTop() > 150 && window.innerWidth >= 800) {
+    		if ($(this).scrollTop() > 150 && window.innerWidth >= 1100) {
     			logo.addClass("logo-hidden");
     		} else {
     			logo.removeClass("logo-hidden");
@@ -78,7 +78,7 @@
 
       var logom = $('.logo-fixed-m');
        $(window).scroll(function () {
-     		if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
+     		if ($(this).scrollTop() > 5 && window.innerWidth < 1100) {
      			logom.addClass("logo-hidden-m");
      		} else {
      			logom.removeClass("logo-hidden-m");
@@ -87,9 +87,9 @@
 
       var lang = $('.lang-menu');
        $(window).scroll(function () {
-     		if ($(this).scrollTop() > 150 && window.innerWidth >= 800) {
+     		if ($(this).scrollTop() > 150 && window.innerWidth >= 1100) {
      			lang.addClass("lang-hidden");
-     		} else if ($(this).scrollTop() > 5 && window.innerWidth < 800) {
+     		} else if ($(this).scrollTop() > 5 && window.innerWidth < 1100) {
             lang.addClass("lang-hidden");
           } else {
      			lang.removeClass("lang-hidden");
@@ -108,7 +108,7 @@
 
       var bannerm = $('.banner-m');
        $(window).scroll(function () {
-        if ($(this).scrollTop() > 1 && window.innerWidth < 800) {
+        if ($(this).scrollTop() > 1 && window.innerWidth < 1100) {
           bannerm.addClass("banner-m-hidden");
         } else {
           bannerm.removeClass("banner-m-hidden");
@@ -250,6 +250,7 @@
 <div id="inline">
 
 	<form id="contact" name="contact" action="#" method="post">
+    <legend>Быстрая запись на консультацию</legend>
     <label for="name">Имя пациента</label><br>
 		<input type="text" id="name" name="name" class="txt"><br>
 		<label for="email">Номер телефона</label><br>

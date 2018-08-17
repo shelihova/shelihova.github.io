@@ -115,6 +115,9 @@ a[href^="tel"]{
 	line-height: 150px;
 	z-index: -1;
 	position: relative;
+	font-family: 'Proxima Nova Th';
+  font-weight: 100;
+  font-style: normal;
 }
 
 
